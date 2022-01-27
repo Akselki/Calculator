@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    </link>
+
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="screen">
+            <input type="text" id="result" placeholder="0" value="" disabled>
+            <input type="text" id="operator" disabled></div>
+        <div id="keys">
+            <div id="numbers">
+                <div onclick="onClickNumber('7')">7</div>
+                <div onclick="onClickNumber('8')">8</div>
+                <div onclick="onClickNumber('9')">9</div>
+                <div onclick="onClickNumber('4')">4</div>
+                <div onclick="onClickNumber('5')">5</div>
+                <div onclick="onClickNumber('6')">6</div>
+                <div onclick="onClickNumber('1')">1</div>
+                <div onclick="onClickNumber('2')">2</div>
+                <div onclick="onClickNumber('3')">3</div>
+                <div onclick="onClickPeriod('.')">.</div>
+                <div onclick="onClickNumber('0')">0</div>
+                <div onclick="onclickEquals()">=</div>
+            </div>
+            <div id="operators">
+                <div onclick="onClickCancel('C')">C</div>
+                <div onclick="onClickOperator('+')">+</div>
+                <div onclick="onClickOperator('-')">-</div>
+                <div onclick="onClickOperator('*')">x</div>
+                <div onclick="onClickOperator('/')">/</div>
+            </div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+
+</html>
